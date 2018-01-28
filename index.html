@@ -3,81 +3,88 @@
 <head>
 	<title>Basic Portfolio: Amy Sterry</title>
 
-	<link rel="stylesheet" type="text/css" href="Assets/css/reset.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- /.insert link for .css here-->
 </head>
-<body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Amy Sterry</a>
-    </div><!-- /.navbar-header -->
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul><!-- /.nav navbar-nav navbar-right -->
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav><!-- /.navbar navbar-default -->
-<section class="main content">
-	<div class="page-header">
-		<div class="row">
-			<div class="col-md-8">
-				<h1>About Me</h1>
-			</div><!-- /.col-md-8 <</-->
-			<div class="row">
-			  	<div class="col-sm-3">
-			      <img class="thumbnail" src="Assets/images/amy_sterry_WEB/Headshot.jpg" alt="Headshot">
-			    </div>
-			      <div class="col-sm-9">
-			      <div class="caption">
-			        
-			        <p id="zig">"The 3 C’s in life: Choice, Chance, Change.  You must make the Choice, to take the Chance, if you want anything in life to Change."- Zig Ziglar</p><br>
+<body style="background-color: #ddd;">
 
-					<p>I have been a non-profit professional and<br>
-			  		 leader for over 15 years, who got her start<br>
+  <header style="background-color: white;">
+    <div class="container" style="padding-right: 0;">
+      <nav class="navbar navbar-default" style="border: none; background: none;">
+        <div class="navbar-header">
+          <span class="navbar-brand" href="#">Amy Sterry</span>
+        </div><!-- /.navbar-header -->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a style="padding-right: 0;" href="#">Contact</a></li>
+        </ul><!-- /.nav navbar-nav navbar-right -->
+      </nav><!-- /.navbar navbar-default -->
+    </div>
+  </header>
 
-			  		 <p>I have been a non-profit professional and<br>
-			  		 leader for over 15 years, who got her start<br>
-			 		 in non-profit software. It is time to return to my<br>
-			 		 roots and change the world from the backend.<br><br>  
-			 		 his is a fresh start, a challenge, and a conundrum<br>
-			 		 all at once but I am ready for the adventure.<br><br>  
-			 		Let the freefall begin.  </p>
-			        
-			      </div>
-			 	  </div>
-			</div>
+  <!-- Container for main page contents -->
+  <div class="container">
 
-			<div class="col-sm-4">
-				<div class="panel panel-default">
-  				<div class="panel-heading">
-   					 <h3 class="panel-title">Connect with Me</h3>
-  				</div><!-- /.panel-heading-->
-  				<div class="panel-body">
-    			<a href="https://github.com/asterrypm" target="_blank"><img class="social-images" src="Assets/images/GHB.png"alt="GitHub"></a>
-				<a href="https://www.linkedin.com/in/amysterry/" target="_blank"><img class="social-images"  src="Assets/images/LI.png" alt="LinkedIn"></a>
-				<a href="https://stackoverflow.com/users/9185269/amy-sterry" target="_blank"><img class="social-images" src="Assets/images/SOF.png" alt="StackOverflow"></a>
-  				</div><!-- /.panel-body-->
-				</div><!-- /.panel panel-default-->
+    <!-- 1 main row containing main page contents -->
+    <div class="row">
 
+      <!-- 'About Me' column -->
+      <div class="col-md-8">
+        <!-- Row containing just the 'About Me' title -->
+        <div class="row">
+          <div class="col-md-12">
+            <h1>About Me</h1>
+          </div>
+        </div>
+        <!-- Row containing image and paragraph -->
+        <div class="row">
+          <div class="col-md-12">
+            <img class="img-responsive" style="width: 30%; float: left;" src="Assets/images/amy_sterry_WEB/Headshot.jpg" alt="Headshot">
+            <p>
+              "The 3 C’s in life: Choice, Chance, Change.  You must make the Choice, to take the Chance, if you want anything in life to Change."- Zig Ziglar
+            </p>
+            <p>
+              I have been a non-profit professional and leader for over 15 years, who got her start in non-profit software. It is time to return to my roots and change the world from the backend. his is a fresh start, a challenge, and a conundrum all at once but I am ready for the adventure. Let the freefall begin.
+            </p>
+          </div>
+        </div>
+      </div> <!-- End 'About Me' Section -->
 
-			
-			</div><!-- /.col-md-4 -->
-		</div><!-- /.row -->
-	</div><!--/.page-header</-->		
+      <!-- 'Connect With Me' Section -->
+      <div class="col-md-4">
+        <!-- Row containing just the 'Connect with me' title -->
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Connect With Me</h2>
+          </div>
+        </div>
+        <!-- Row containing just the 'Connect with me' social icons -->
+        <div class="row">
+          <div class="col-xs-4 col-md-4">
+            <a href="https://github.com/asterrypm" target="_blank">
+              <img class="img-responsive" src="Assets/images/GHB.png" alt="GitHub">
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-4">
+            <a href="https://www.linkedin.com/in/amysterry/" target="_blank">
+              <img class="img-responsive"  src="Assets/images/LI.png" alt="LinkedIn">
+            </a>
+          </div>
+          <div class="col-xs-4 col-md-4">
+            <a href="https://stackoverflow.com/users/9185269/amy-sterry" target="_blank">
+              <img class="img-responsive" src="Assets/images/SOF.png" alt="StackOverflow">
+            </a>
+          </div>
+        </div>
+      </div> <!-- End 'Connect With Me' Section -->
 
+    </div> <!-- End 'row' that wraps page content -->
+  </div> <!-- End 'container' -->
 
+  <footer class="navbar-fixed-bottom text-center" style="background-color: grey; width: 100%; height: 50px; border-top: 3px solid #4aaaa5;">
+    <span>&copy; 2018 Amy Sterry</span>
+  </footer>
 
-
-
-
-
-
-
-</section>
 </body>
-
 </html>
