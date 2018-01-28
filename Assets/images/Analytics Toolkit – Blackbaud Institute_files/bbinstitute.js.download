@@ -1,0 +1,65 @@
+/**
+ * bbinstitute theme main JS file
+ *
+ * @author	Tyler Bailey
+ */
+
+var $window = window;
+var pageHeight = $window.innerHeight;
+var pageWidth = $window.innerWidth;
+var isTouch = !!("undefined" != typeof document.documentElement.ontouchstart);
+
+var pathArray = $window.location.href.split( '/' ); // Parse URL
+var protocol = pathArray[0]; // Protocol (http || https)
+var host = pathArray[2]; // Host (blackbaud.com)
+var directory = pathArray[3]; // What directory are we on (or page)
+
+var formid = "#uwpqsffrom_27";
+
+// On page load
+(function($) {
+	// use $ instead of 'jQuery'
+	'use strict';
+
+	$("#bb-carousel").carousel({
+         interval : 10000,
+         pause: false
+     });
+
+	// Add target=_blank to all external links (if it's not already found)
+    $('a').each(function() {
+		if($(this).attr('target') !== '_blank') {
+			$(this).attr('target', (this.href.match( host )) ? '_self' :'_blank');
+		}
+    });
+
+	$('.navbar-toggle').on('click', function(e) {
+		$(this).toggleClass('active');
+	});
+
+	// Filter additions
+	//$(formid).find('select option[value="2016"]').prop('selected', true);
+	//$(formid).find('select#tpd-0').val('2016');
+
+	// Process the AJAX filter
+	$(formid).change(function(){
+		process_data($(this));
+	});
+
+	// Highlight the 'resources' menu item when on an asset page
+	if(directory === 'asset' || directory === 'confirmation') {
+		$('li#menu-item-26').addClass('active current-menu-item');
+	}
+
+	// Adjust page headers on mobile devices
+	if(pageWidth <= 768 && directory === 'asset' || directory === 'confirmation') {
+		var carouselCaptionContainer = $('.carousel-caption');
+		var carouselCaption = carouselCaptionContainer .find('h1');
+		var carouselSubcap = carouselCaptionContainer.find('h3');
+
+		if(carouselSubcap.length > 0) {
+			carouselCaptionContainer.addClass('subcaption');
+		}
+	}
+
+})(jQuery);
