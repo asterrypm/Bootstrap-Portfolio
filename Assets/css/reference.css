@@ -7,7 +7,12 @@ body {
 	background-image: url("../images/retro_intro.png")
  }
 
-
+header {
+	background-color: #fff;
+	border-bottom: 3px solid gray;
+	margin-bottom: 20px;
+	border-color: #cccccc;
+}
 .container {
 	width: 960px;
 	margin: 0 auto;
@@ -53,7 +58,6 @@ header {
 	color: white;
 	font-weight: bold;
 	font-size: 40px;
-
 }
 
 footer {
