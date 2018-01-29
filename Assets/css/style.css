@@ -95,7 +95,7 @@ header {
 
 }
 
-#connect > h2 {
+#connect {
 	font-size: 20 px;
 	background-color: #ffffff;
 	color: #4aaaa5;
@@ -105,13 +105,12 @@ header {
 .row.connect {
 	background-color: #ffffff;
 	padding-bottom: 10px;
-	text-align: center;
 }
 
 /* -- contact page --*/
 
 
-
+/*class .col-md-6 to the div’s on lines: 44, 50, 56, 61, and 67*/
 
 
 form{
@@ -177,7 +176,7 @@ div {
 }
 
 .left-col {
-	float: left;
+	/* float: left*/
 	position: relative;	
 }
 
@@ -187,7 +186,7 @@ div {
 	
 }
 .right-col {
-	float: right;
+	/*float: right; */
 	position: relative;
 }
 
